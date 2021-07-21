@@ -1,0 +1,28 @@
+ @media screen and (max-width: 640px) {
+            table, thead, tbody, th, td, tr {
+    display: block;
+  }
+ 
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  /* i campi di ogni riga diventano la colonna destra */
+  td {
+    position: relative;
+    padding-left: 50% !important;
+  }
+  /* la descrizione del campo diventa la colonna sinistra */
+  td:before {
+    position: absolute;
+    left: 6px;
+    content: attr(data-th);
+    font-weight: bold;
+  }
+  /* evidenziamo il primo dato e separiamo visivamente i blocchi */
+  td:first-of-type {
+    font-weight: bold;
+    border-top: 2px solid rgb(222, 226, 230);
+  }
+}

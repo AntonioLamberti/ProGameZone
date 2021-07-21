@@ -1,0 +1,40 @@
+@media screen and (max-width: 640px)  {
+     div .card {
+        float: none;
+        display: block;
+        width: 80%;
+        padding: 15px;
+        border-right: none;
+    }
+    
+    div .col {
+        float: none;
+        display: block;
+        width: 80%;
+        padding: 20px;
+        border-right: none;
+         margin: 0 auto;
+        
+      }
+      
+      button[type=submit] {
+      height: 20px; 
+      width: 20%;
+      }
+     
+}
+
+@media screen and (max-width: 1024px)  {
+     div .card {
+        float: none;
+        display: block;
+        width: 80%;
+        padding: 15px;
+        border-right: none;
+    }
+     div .container h2{
+        font-size: 15px;
+
+      }
+    
+   }

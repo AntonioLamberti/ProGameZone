@@ -1,0 +1,46 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+/*il contenitore deve essere posizionato relativamente:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*posizionare gli elementi di completamento automatico in modo che abbiano la stessa larghezza del contenitore:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*quando si passa il mouse su un oggetto:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*durante la navigazione tra gli elementi utilizzando i tasti freccia:*/
+.autocomplete-active {
+  background-color:  #bdbdbd !important; 
+  color: #ffffff; 
+}
+
+button[type=submit] {
+      height: 40px; 
+      width: 20%;
+      }
